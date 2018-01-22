@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    
+    <% topics.forEach((topic) => { %>
+      
+        <h4><%= topic.title %>  </h4>
+          -- Comment <h5><%= topic.comment.title %> </h5>
+     
+    <% }) %>
+
+
+  </body>
+</html>
